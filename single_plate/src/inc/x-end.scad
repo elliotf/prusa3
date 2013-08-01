@@ -10,7 +10,8 @@ use <bearing.scad>
 
 module x_end_base(){
 // Main block
-translate(v=[-14,-10,30]) cube(size = [17,41,60], center = true);
+//translate(v=[-14,-10,30]) cube(size = [17,41,60], center = true);
+translate(v=[-14,-10,30]) cube(size = [20,41,60], center = true);
 // Bearing holder
 vertical_bearing_base();	
 //Nut trap
@@ -30,7 +31,8 @@ translate(v=[-14,-40,6]) rotate(a=[-90,0,0]) pushfit_rod(8,51);
 translate(v=[-14,-40,x_rod_distance+6]) rotate(a=[-90,0,0]) pushfit_rod(8,51);
 // Nut trap
  translate(v=[0,-17,-1]) cylinder(h = 10, r=3);
- translate(v=[0,-17,3]) rotate([0,0,30]) cylinder(h = 5, r=4.5, $fn = 6);
+ //translate(v=[0,-17,3]) rotate([0,0,30]) cylinder(h = 5, r=4.5, $fn = 6);
+ translate(v=[0,-17,3]) rotate([0,0,30]) cylinder(h = 5, r=5, $fn = 6);
 }
 
 

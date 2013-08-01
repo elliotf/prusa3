@@ -16,8 +16,8 @@ da12 = 1 / cos(180 / 12) / 2;
 module x_end_motor_base(){
  x_end_base();
  //translate(v=[-14,31,26]) cube(size = [17,44,52], center = true);
- translate(v=[-14,16,26]) cube(size = [17,14,52], center = true);
- translate(v=[-18.25,38,9.5]) cube(size = [8.5,30,19], center = true);
+ translate(v=[-14,16,26]) cube(size = [20,14,52], center = true);
+ translate(v=[-19,38,9.5]) cube(size = [10,30,19], center = true);
 }
 
 //3mm_nut_hole();
@@ -33,9 +33,9 @@ module x_end_motor_holes(){
   // Belt hole
   translate(v=[-14,1,0]) cube(size = [10,46,22], center = true);
   // Motor mounting holes
-  translate(v=[-18,-15.5,-15.5]) 3mm_nut_hole();
-  translate(v=[-18,-15.5,15.5]) 3mm_nut_hole();
-  translate(v=[-18,15.5,-15.5]) 3mm_nut_hole();
+  translate(v=[-20,-15.5,-15.5]) 3mm_nut_hole();
+  translate(v=[-20,-15.5,15.5]) 3mm_nut_hole();
+  translate(v=[-20,15.5,-15.5]) 3mm_nut_hole();
 
   // Material saving cutout
   translate(v=[-10,40,-31]) rotate(a=[60,0,0])  cube(size = [60,45,45], center = true);
